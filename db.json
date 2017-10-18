@@ -1,19 +1,26 @@
 {
    "users": [
-    { "id": 1, "username": "Tanja" },
-    { "id": 2, "username": "Eric" },
-    { "id": 3, "username": "Chris" }
+    { "id": 1, "username": "Tanja", "password":"test1", "email":"tanja@firma.de" },
+    { "id": 2, "username": "Eric", "password":"test2", "email":"eric@firma.de" },
+    { "id": 3, "username": "Chris", "password":"test3", "email":"chris@firma.de" }
   ],
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "events": [
+    { "id": 1, "title": "Lunchtalk", "date":"2017-10-20T11:30:00.000Z", "place":"Bahnhofstraße 41, Nürnberg" },
+    { "id": 2, "title": "Halloween", "date":"2017-10-31T20:00:00.000Z", "place":" Flughafenstraße 100, Nürnberg" },
+    { "id": 3, "title": "Weihnachtsparty", "date":"2017-12-01T18:00:00.000Z", "place":" Luitpoldstraße 6, Nürnberg" }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "emails": [
+    { "id": 1, "body": "some text", "from": 1, "to":2 },
+    { "id": 2, "body": "some text", "from": 1, "to":3},
+    { "id": 3, "body": "some another text", "from": 3, "to":2 }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "termins": [
+    { "user_id": 1, "events_id": 1 },
+    { "user_id": 2, "events_id": 1},
+    { "user_id": 3, "events_id": 1 },
+    { "user_id": 2, "events_id": 2},
+    { "user_id": 1, "events_id": 3 },
+    { "user_id": 2, "events_id": 3 },
+    { "user_id": 3, "events_id": 3}
+  ]
 }
